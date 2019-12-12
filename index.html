@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		Họ tên *<input type="text" name="" id="ht"><br><br>
+		Tên tài khoản *<input type="text" name="" id="tk"><br><br>
+		Mật khẩu *<input type="password" name=""><br><br>
+		Nhập lại mật khẩu *<input type="password" name="nhập lại mật khẩu"><br><br>
+		Email *<input type="email" name="email"><br><br>
+		SDT *<input type="SDT" name="sđt"><br><br>
+		Địa chỉ <textarea></textarea> <br><br>
+		<input type="button" value="Đăng ký"  name="" onclick="kiemtra()" >
+	</form>
+
+	<script type="text/javascript">
+        function kiemtra(){
+        	var ten=document.getElementById('ht').value;
+        	console.log(ten);
+        	if(ten=="")
+        		alert("Tên không được bỏ trống")
+        }
+	</script>
+
+</body>
+</html>
