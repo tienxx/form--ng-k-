@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Đăng kí thành viên</title>
 </head>
 <body>
 	<form>
-		Họ tên *<input type="text" name="" id="ht"><br><br>
-		Tên tài khoản *<input type="text" name="" id="tk"><br><br>
-		Mật khẩu *<input type="password" name=""><br><br>
-		Nhập lại mật khẩu *<input type="password" name="nhập lại mật khẩu"><br><br>
-		Email *<input type="email" name="email"><br><br>
-		SDT *<input type="SDT" name="sđt"><br><br>
-		Địa chỉ <textarea></textarea> <br><br>
-		<input type="button" value="Đăng ký"  name="" onclick="kiemtra()" >
+		<table>
+			<tr>
+				<td>Họ tên *</td>
+			<td><input type="text" name="" id="ht"><br><br></td>
+			</tr>
+
+			<tr>
+				<td>Tên tài khoản *</td>
+				<td><input type="text" name="" id="tk"><br><br></td>
+			</tr>
+
+			<tr>
+				<td>Mật khẩu *</td>
+				<td><input type="password" name="" id="pw"><br><br></td>
+			</tr>
+			
+			<tr>
+				<td>Nhập lại mật khẩu *</td>
+				<td><input type="resspassword" name="" id="resspw"><br><br></td>
+			</tr>
+			
+			<tr>
+				<td>Email *</td>
+				<td><input type="email" name="" id="mail"><br><br></td>
+			</tr>
+			
+			<tr>
+				<td>SĐT *</td>
+				<td><input type="number" name="" id="sđt"><br><br></td>
+			</tr>
+
+			<tr>
+				<td>Địa chỉ</td>
+				<td><textarea></textarea> <br><br></td>
+			</tr>
+			
+			 <tr>
+			 	<td><input type="button" value="Đăng ký"  name="" onclick="kiemtra()" ></td>
+			 </tr>
+			
+		</table>
+
 	</form>
 
 	<script type="text/javascript">
@@ -21,6 +55,26 @@
         	console.log(ten);
         	if(ten=="")
         		alert("Tên không được bỏ trống")
+
+        	var tai khoan=document.getElementById('tk').value;
+        	console.log(tai khoan);
+        	if(tai khoan=="")
+        		alert("Tài khoản không được bỏ trống")
+
+        	var mat khau=document.getElementById('pw').value;
+        	console.log(mat khau);
+        	if(mat khau=="")
+        		alert("Mật khẩu không được bỏ trống")
+
+        	var email=document.getElementById('mail').value;
+        	console.log(email);
+        	if(email=="")
+        		alert("Email khẩu không được bỏ trống")
+
+        	var sđt=document.getElementById('sđt').value;
+        	console.log(sđt);
+        	if(sđt=="")
+        		alert("SĐT không được bỏ trống")
         }
 	</script>
 
